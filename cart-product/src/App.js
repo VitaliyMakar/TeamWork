@@ -1,5 +1,6 @@
 import React from "react";
 import CartList from "./components/cartList";
+import {ActiveCart} from "./components/activeCart";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
             <CartList/>
           </div>
           <div className="col">
-            {/*<CartInfo/>*/}
+            <ActiveCart/>
           </div>
         </div>
       </div>

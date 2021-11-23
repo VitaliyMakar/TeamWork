@@ -20,7 +20,7 @@ export const CartItem = ({cart}) => {
 
     return !user ? (<div>another Wait</div>) : (
         <div onClick={selectActive}>
-            <p>{user.name.firstname} {user.name.lastname} / Ordered on {dateString(cart.date)}</p>
+            <p>{user.name.firstname} {user.name.lastname} / Ordered on: {dateString(cart.date)}</p>
         </div>
     );
 };
