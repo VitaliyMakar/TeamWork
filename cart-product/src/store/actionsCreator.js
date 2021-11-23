@@ -38,7 +38,7 @@ export const getAllCarts = () => {
 
     return async (dispatch) => {
         try {
-            const response = await fetch('https://fakestoreapi.com/carts')
+            const response = await fetch('https://fakestoreapi.com/carts?limit=6')
             const data = await response.json()
             dispatch (addAllCarts(data))
         } catch (e) {

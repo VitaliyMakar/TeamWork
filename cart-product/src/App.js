@@ -1,14 +1,15 @@
 import React from "react";
+import CartList from "./components/cartList";
 
 function App() {
   return (
       <div className="container">
         <div className="row">
           <div className="col">
-            <Carts/>
+            <CartList/>
           </div>
           <div className="col">
-            <CartInfo/>
+            {/*<CartInfo/>*/}
           </div>
         </div>
       </div>
